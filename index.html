@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Charlie Bird Menu</title>
+ <meta charset="utf-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+ <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+ <script type="text/javascript">
+    // Path to your PDF file
+    const pdfUrl = "MenuCharlie.pdf"; // Replace with the path to your PDF file
+
+    // Create a hidden link element
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "MenuCharlie.pdf"; // The name of the file to be downloaded
+    document.body.appendChild(link);
+
+    // Trigger the download
+    link.click();
+
+    // Remove the link element after triggering the download
+    document.body.removeChild(link);
+ </script>
+</body>
+</html>
