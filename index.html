@@ -8,19 +8,17 @@
 </head>
 <body>
  <script type="text/javascript">
-    // Path to your PDF file
-    const pdfUrl = "MenuCharlie.pdf"; // Replace with the path to your PDF file
+    
+    const pdfUrl = "MenuCharlie.pdf";  
 
-    // Create a hidden link element
+    
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "MenuCharlie.pdf"; // The name of the file to be downloaded
+    link.download = "MenuCharlie.pdf"; 
     document.body.appendChild(link);
 
-    // Trigger the download
     link.click();
 
-    // Remove the link element after triggering the download
     document.body.removeChild(link);
  </script>
 </body>
